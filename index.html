@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Clip Path Mousemove Effect With JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <h2>Hello</h2>
+        <h2>How It Is ?</h2>
+        <div class="circle"></div>
+    </section>
+    <script>
+        const circle = document.documentElement;
+        circle.addEventListener('mousemove', e => {
+            circle.style.setProperty('--x', e.clientX + 'px');
+            circle.style.setProperty('--y', e.clientY + 'px');
+        } )
+    </script>
+</body>
+
+</html>
